@@ -7,6 +7,21 @@ on:
     branches: [ master ]
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.x
+      - name: Restore dependencies
+        run: dotnet restore
+      - name: Cd test solution
+        run: cd HaysR.FireAndForget.Test
+      - name: Test
+        run: dotnet test --verbosity normal
+
   build:
     runs-on: ubuntu-latest
     steps:
@@ -26,5 +41,5 @@ jobs:
     - name: Publish    
       uses: brandedoutcast/publish-nuget@v2.5.2  
       with:   
-        PROJECT_FILE_PATH: Extensions/Extensions.csproj  
+        PROJECT_FILE_PATH: HaysR.FireAndForget/HaysR.FireAndForget.csproj  
         NUGET_KEY: ${{secrets.NUGET_API_KEY}} 
