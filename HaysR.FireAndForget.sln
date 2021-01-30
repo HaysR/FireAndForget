@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaysR.FireAndForget", "HaysR.FireAndForget\HaysR.FireAndForget.csproj", "{ABD9A12F-68F1-469D-A328-52B537833A34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaysR.FireAndForget.Test", "HaysR.FireAndForget.Test\HaysR.FireAndForget.Test.csproj", "{593D1674-F7FF-4D33-BB85-522CFA00713F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABD9A12F-68F1-469D-A328-52B537833A34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD9A12F-68F1-469D-A328-52B537833A34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD9A12F-68F1-469D-A328-52B537833A34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD9A12F-68F1-469D-A328-52B537833A34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593D1674-F7FF-4D33-BB85-522CFA00713F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593D1674-F7FF-4D33-BB85-522CFA00713F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593D1674-F7FF-4D33-BB85-522CFA00713F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593D1674-F7FF-4D33-BB85-522CFA00713F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
